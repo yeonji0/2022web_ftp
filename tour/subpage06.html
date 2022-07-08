@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="YJtour" />
-    <meta property="og:image" content="images/logo.png" />
     <title>여행박사</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,8 +28,7 @@
                 controls:false,
                 pagerCustom:".slideTap",
                 mode:"vertical",
-                touchEnabled:false,
-                infiniteLoop: false
+                touchEnabled:false
             });
 
             $("btnNext").click(function(){
@@ -42,7 +39,7 @@
             });
         });
         $(document).ready(function(){
-            $("#sdate01, #edate01,#sdate02, #edate02,#sdate03, #edate03,#sdate04, #edate04").datepicker({
+            $("#sdate, #edate").datepicker({
                 dateFormat:'yy.mm.dd',
                 dateFormat: 'yy.mm.dd',
                 prevText: '이전 달',
@@ -108,7 +105,7 @@
                             </ul>
                         </div>
                         </li>
-                        <li><a href="subpage03.html">렌트카</a>
+                        <li><a href="#">렌트카</a>
                         <div class="submenu">
                             <ul class="clearfix">
                                 <li><a href="#">동남아</a></li>
@@ -118,7 +115,7 @@
                             </ul>
                         </div>
                         </li>
-                        <li><a href="subpage04.html">여행TIP</a>
+                        <li><a href="#">여행TIP</a>
                         <div class="submenu">
                             <ul class="clearfix">
                                 <li><a href="#">동남아</a></li>
@@ -128,10 +125,46 @@
                             </ul>
                         </div>
                         </li>
-                        <li><a href="subpage05.html">회사소개</a></li>
-                        <li><a href="subpage06.html">커뮤니티</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">커뮤니티</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    
+    <div class="contents subpage citytour">
+        
+        <div class="visual">
+            <div class="txtWrap container">
+                <h3>여행도시</h3><span></span>
+                <p>다시 출발합니다, 믿고 떠나는 여행박사 패키지</p>
+            </div>
+        </div>
+
+        <div class="container section">
+            <img src="../06tour/images/sub_img02.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerWrap">
+            <div class="ftTop">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+                    <p>
+                        <a href="#">이용약관<span></span></a>
+                        <a href="#">개인정보취급방침<span></span></a>
+                        <a href="#">사이트맵<span></span></a>
+                        <a href="#">고객센터<span></span></a>
+                        <a href="#">광고 및 제휴 문의</a>
+                    </p>
+            </div>
+    
+            <div class="ftadd"> 
+                    <p>123-456 서울특별시 구로구 구로동 (주) 하이미디어 사업지등록번호 : 123-4558-56596 대표이사 : 홍길동 대표번호 : 02-4855-05965</p>
+                    <p>Copyrightⓒ NHN Doctortour Corp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
